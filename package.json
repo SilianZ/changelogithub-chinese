@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.13.7",
   "packageManager": "pnpm@9.0.2",
-  "description": "Generate changelog for GitHub.",
+  "description": "Generate changelog for GitHub in Chinese.",
   "author": "SilianZ <silian_zheng@outlook.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/antfu",
