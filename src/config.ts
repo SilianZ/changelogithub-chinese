@@ -8,12 +8,12 @@ export function defineConfig(config: ChangelogOptions) {
 const defaultConfig: ChangelogOptions = {
   scopeMap: {},
   types: {
-    feat: { title: '🚀 Features' },
-    fix: { title: '🐞 Bug Fixes' },
-    perf: { title: '🏎 Performance' },
+    feat: { title: '🚀 新增功能' },
+    fix: { title: '🐞 漏洞修复' },
+    perf: { title: '🏎 性能' },
   },
   titles: {
-    breakingChanges: '🚨 Breaking Changes',
+    breakingChanges: '🚨 重大修改',
   },
   contributors: true,
   capitalize: true,
