@@ -7,12 +7,12 @@
   "author": "SilianZ <silian_zheng@outlook.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/SilianZ/changelogithub#readme",
+  "homepage": "https://github.com/SilianZ/changelogithub-chinese#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SilianZ/changelogithub.git"
+    "url": "git+https://github.com/SilianZ/changelogithub-chinese.git"
   },
-  "bugs": "https://github.com/SilianZ/changelogithub/issues",
+  "bugs": "https://github.com/SilianZ/changelogithub-chinese/issues",
   "keywords": [
     "github",
     "release",
