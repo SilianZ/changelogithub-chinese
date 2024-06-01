@@ -109,11 +109,11 @@ export function generateMarkdown(commits: Commit[], options: ResolvedChangelogOp
   }
 
   if (!lines.length)
-    lines.push('*No significant changes*')
+    lines.push('*无重要更改*')
 
   const url = `https://${options.baseUrl}/${options.repo}/compare/${options.from}...${options.to}`
 
-  lines.push('', `##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](${url})`)
+  lines.push('', `##### &nbsp;&nbsp;&nbsp;&nbsp;[在 GitHub 上查看改动](${url})`)
 
   return convert(lines.join('\n').trim(), true)
 }
