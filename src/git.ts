@@ -23,8 +23,12 @@ export async function getGitTags() {
     .reverse()
 }
 
+function getTagWithoutPrefix(tag: string) {
+  return tag.replace(/^v/, '')
+}
+
 export async function getLastMatchingTag(inputTag: string) {
-  const inputTagWithoutPrefix = semver.coerce(inputTag)
+  const inputTagWithoutPrefix = getTagWithoutPrefix(inputTag)
   const isVersion = semver.valid(inputTagWithoutPrefix) !== null
   const isPrerelease = semver.prerelease(inputTag) !== null
   const tags = await getGitTags()
@@ -33,7 +37,7 @@ export async function getLastMatchingTag(inputTag: string) {
   // Doing a stable release, find the last stable release to compare with
   if (!isPrerelease && isVersion) {
     tag = tags.find((tag) => {
-      const tagWithoutPrefix = semver.coerce(tag)
+      const tagWithoutPrefix = getTagWithoutPrefix(tag)
 
       return tagWithoutPrefix !== inputTagWithoutPrefix
         && semver.valid(tagWithoutPrefix) !== null
