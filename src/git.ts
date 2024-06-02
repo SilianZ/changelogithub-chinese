@@ -62,7 +62,7 @@ export async function getFirstGitCommit() {
 }
 
 export function isPrerelease(version: string) {
-  return !/^[^.]*[\d.]+$/.test(version)
+  return semver.prerelease(version) !== null
 }
 
 async function execCommand(cmd: string, args: string[]) {
