@@ -37,7 +37,7 @@ export async function getLastMatchingTag(inputTag: string) {
 
       return tagWithoutPrefix !== inputTagWithoutPrefix
         && semver.valid(tagWithoutPrefix) !== null
-        && semver.prerelease(tagWithoutPrefix) !== null
+        && semver.prerelease(tagWithoutPrefix) === null
     })
   }
 
