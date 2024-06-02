@@ -8,8 +8,8 @@ export function defineConfig(config: ChangelogOptions) {
 const defaultConfig: ChangelogOptions = {
   scopeMap: {},
   types: {
-    feat: { title: '🚀 新增功能' },
-    fix: { title: '🐞 漏洞修复' },
+    feat: { title: '✨ 新增功能' },
+    fix: { title: '🐛 漏洞修复' },
     perf: { title: '🏎 性能' },
   },
   titles: {
