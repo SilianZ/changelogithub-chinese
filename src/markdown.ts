@@ -23,7 +23,7 @@ function formatReferences(references: Reference[], baseUrl: string, github: stri
   const referencesString = join(refs).trim()
 
   if (type === 'issues')
-    return referencesString && `in ${referencesString}`
+    return referencesString && `于 ${referencesString}`
   return referencesString
 }
 
@@ -33,7 +33,7 @@ function formatLine(commit: Commit, options: ResolvedChangelogOptions) {
 
   let authors = join([...new Set(commit.resolvedAuthors?.map(i => i.login ? `@${i.login}` : `**${i.name}**`))])?.trim()
   if (authors)
-    authors = `by ${authors}`
+    authors = `由 ${authors} 提交`
 
   let refs = [authors, prRefs, hashRefs].filter(i => i?.trim()).join(' ')
 
@@ -131,7 +131,7 @@ function capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
-function join(array?: string[], glue = ', ', finalGlue = ' and '): string {
+function join(array?: string[], glue = ', ', finalGlue = ' 和 '): string {
   if (!array || array.length === 0)
     return ''
 
