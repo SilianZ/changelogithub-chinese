@@ -11,6 +11,9 @@ const defaultConfig: ChangelogOptions = {
     feat: { title: '✨ 新增功能' },
     fix: { title: '🐛 漏洞修复' },
     perf: { title: '🏎 性能' },
+    chore: { title: '🧹 杂项' },
+    refactor: { title: '♻️ 代码重构' },
+    
   },
   titles: {
     breakingChanges: '🚨 重大修改',
