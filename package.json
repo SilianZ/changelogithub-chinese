@@ -1,7 +1,7 @@
 {
   "name": "changelogithub-chinese",
   "type": "module",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "packageManager": "pnpm@9.0.2",
   "description": "Generate changelog for GitHub in Chinese.",
   "author": "SilianZ <silian_zheng@outlook.com>",
